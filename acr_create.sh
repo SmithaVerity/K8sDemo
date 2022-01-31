@@ -1,4 +1,4 @@
-az acr create  -g k8demo  -l eastus -n k8demoContainerDirectory  -s Standard
+az acr create -g k8demo -sku Standard -n k8demoContainerDirectory
 
 cd ratings-api
 az acr build  -g k8demo --registry k8demoContainerDirectory  --image ratings-api:v1 .
