@@ -1,4 +1,4 @@
-ACR_NAME=k8demoCR010222
+ACR_NAME=k8demo-$RANDOM
 az acr create -g k8demo --sku Standard --name $ACR_NAME
 
 cd ratings-api
