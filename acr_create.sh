@@ -1,17 +1,9 @@
-REGION_NAME=eastus
-RESOURCE_GROUP=k8demo
-SUBNET_NAME=k8-subnet
-VNET_NAME=k8-vnet
-AKS_CLUSTER_NAME=k8demoCluster
-ACR_NAME=k8demoContainerDirectory
-WORKSPACE=k8demoworkspace
-
-az acr create  -g k8demo  -l $REGION_NAME -n $ACR_NAME  --sku Standard
+az acr create  -g k8demo  -l eastus -n k8demoContainerDirectory  -s Standard
 
 cd ratings-api
-az acr build  -g k8demo --registry $ACR_NAME  --image ratings-api:v1 .
+az acr build  -g k8demo --registry k8demoContainerDirectory  --image ratings-api:v1 .
 
 cd ~
 cd ratings-web
-az acr build -g k8demo --registry $ACR_NAME  --image ratings-web:v1 .
-az acr repository list  --name $ACR_NAME   --output table
+az acr build -g k8demo --registry k8demoContainerDirectory  --image ratings-web:v1 .
+az acr repository list  --name k8demoContainerDirectory   --output table
