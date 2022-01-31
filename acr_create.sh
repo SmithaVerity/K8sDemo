@@ -1,4 +1,5 @@
-ACR_NAME=k8demoverity
+CLIENTNAME=Verityk8sdemo
+ACR_NAME=acr$CLIENTNAME
 
 az acr create -g k8demo --sku Standard --name $ACR_NAME
 
