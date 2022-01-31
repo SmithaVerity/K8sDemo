@@ -1,3 +1,11 @@
+REGION_NAME=eastus
+RESOURCE_GROUP=k8demo
+SUBNET_NAME=k8-subnet
+VNET_NAME=k8-vnet
+AKS_CLUSTER_NAME=k8demoCluster
+ACR_NAME=k8demoContainerDirectory
+WORKSPACE=k8demoworkspace
+
 az acr create  --resource-group $RESOURCE_GROUP  --location $REGION_NAME  --name $ACR_NAME  --sku Standard
 
 git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
