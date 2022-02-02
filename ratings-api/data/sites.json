@@ -1,22 +1,22 @@
 [
   {
-      "name": "Fruit Smoothies",
+      "name": "Hyperscalers",
       "shortCode": "FR",
       "pages": {
           "Home": {
-              "title": "Fruit Smoothies :: Project Homepage",
+              "title": "Hyperscalers :: Project Homepage",
               "headerImage": "/static/img/fruits/smoothies.jpeg",
-              "subtitle": "Fruit Smoothies - Project Homepage"
+              "subtitle": "Hyperscalers - Project Homepage"
           },
           "Rating": {
-              "title": "Fruit Smoothies :: Rate the Superheroes",
+              "title": "Hyperscalers :: Rate the Hyperscalers",
               "headerImage": "/static/img/fruits/smoothies.jpeg",
-              "subtitle": "Rate the smoothies"
+              "subtitle": "Rate the Hyperscalers"
           },
           "Leaderboard": {
-              "title": "Fruit Smoothies :: Current Leaderboard",
+              "title": "Hyperscalers :: Current Leaderboard",
               "headerImage": "/static/img/fruits/smoothies.jpeg",
-              "subtitle": "Current Leaderboard - Orange smoothie? Yuck."
+              "subtitle": "Current Leaderboard"
           }
       }
   }
