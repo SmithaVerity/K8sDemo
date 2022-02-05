@@ -25,10 +25,10 @@ spec:
               key: MONGOCONNECTION # the key inside the Kubernetes secret containing the data
         resources:
           requests: # minimum resources required
-            cpu: 250m
+            cpu: 1000m
             memory: 64Mi
           limits: # maximum resources allocated
-            cpu: 500m
+            cpu: 1000m
             memory: 256Mi
         readinessProbe: # is the container ready to receive traffic?
           httpGet:
