@@ -3,7 +3,7 @@ RESOURCE_GROUP=k8demo
 SUBNET_NAME=k8-subnet
 VNET_NAME=k8-vnet
 AKS_CLUSTER_NAME=k8demoCluster
-ACR_NAME=k8demoContainerDirectory
+ACR_NAME=acrVerityk8sdemo
 WORKSPACE=k8demoworkspace
 
 
