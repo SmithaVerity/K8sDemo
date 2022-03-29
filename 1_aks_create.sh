@@ -3,7 +3,7 @@ RESOURCE_GROUP=k8demo-scale
 SUBNET_NAME=k8-subnet-scale
 VNET_NAME=k8-vnet-scale
 AKS_CLUSTER_NAME=k8demoCluster-scale
-ACR_NAME=acrVerityk8sdemo-scale
+ACR_NAME=acrVerityk8sscale
 WORKSPACE=k8demoworkspace-scale
 
 
