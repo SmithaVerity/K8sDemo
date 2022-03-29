@@ -22,7 +22,7 @@ az aks create \
 --kubernetes-version $VERSION \
 --network-plugin azure \
 --vnet-subnet-id $SUBNET_ID \
---service-cidr 10.0.0.0/24 \
+--service-cidr 10.0.0.0/29 \
 --dns-service-ip 10.0.0.10 \
 --docker-bridge-address 172.17.0.1/16 \
 --generate-ssh-keys --y
