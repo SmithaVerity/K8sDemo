@@ -23,7 +23,7 @@ az aks create \
 --network-plugin azure \
 --vnet-subnet-id $SUBNET_ID \
 --service-cidr 10.2.0.0/30 \
---dns-service-ip 10.2.0.10 \
+--dns-service-ip 10.2.0.0 \
 --docker-bridge-address 172.17.0.1/16 \
 --generate-ssh-keys --y
 
