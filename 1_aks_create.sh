@@ -30,5 +30,5 @@ az aks create \
 az aks get-credentials  --resource-group $RESOURCE_GROUP  --name $AKS_CLUSTER_NAME
 kubectl get nodes
 kubectl get namespace
-kubectl create namespace ratingsapp
+kubectl create namespace ratingsapp-scale
 
