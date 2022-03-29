@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ratings-web
+  name: ratings-web-scale
 spec:
   selector:
     matchLabels:
-      app: ratings-web
+      app: ratings-web-scale
   template:
     metadata:
       labels:
-        app: ratings-web # the label for the pods and the deployments
+        app: ratings-web-scale # the label for the pods and the deployments
     spec:
       containers:
-      - name: ratings-web
-        image: acrVerityk8sdemo.azurecr.io/ratings-web:v1 # IMPORTANT: update with your own repository
+      - name: ratings-web-scale
+        image: acrVerityk8sscale.azurecr.io/ratings-web-scale:v1 # IMPORTANT: update with your own repository
         imagePullPolicy: Always
         ports:
         - containerPort: 8080 # the application listens to this port
         env:
         - name: API # the application expects to connect to the API at this endpoint
-          value: http://ratings-api.ratingsapp.svc.cluster.local
+          value: http://ratings-api-scale.ratingsapp-scale.svc.cluster.local
         resources:
           requests: # minimum resources required
             cpu: 250m
