@@ -1,5 +1,5 @@
 REGION_NAME=eastus
-RESOURCE_GROUP=k8demo
+RESOURCE_GROUP=k8demo-scale
 SUBNET_NAME=k8-subnet-scale
 VNET_NAME=k8-vnet-scale
 AKS_CLUSTER_NAME=k8demoCluster-scale
