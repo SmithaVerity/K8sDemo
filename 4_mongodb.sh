@@ -1,4 +1,4 @@
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm search repo bitnami
-helm install ratings bitnami/mongodb  --namespace ratingsapp \
-    --set auth.username=cldtraining,auth.password=cldtraining,auth.database=ratingsdb
+# helm repo add bitnami https://charts.bitnami.com/bitnami
+# helm search repo bitnami
+helm install ratings-scale bitnami/mongodb  --namespace ratingsapp-scale \
+    --set auth.username=cldtraining-scale,auth.password=cldtraining-scale,auth.database=ratingsdb-scale
