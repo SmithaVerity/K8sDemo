@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ratings-api
+  name: ratings-api-scale
 spec:
   selector:
     matchLabels:
-      app: ratings-api
+      app: ratings-api-scale
   template:
     metadata:
       labels:
-        app: ratings-api # the label for the pods and the deployments
+        app: ratings-api-scale # the label for the pods and the deployments
     spec:
       containers:
-      - name: ratings-api
-        image: acrVerityk8sdemo.azurecr.io/ratings-api:v1 # IMPORTANT: update with your own repository
+      - name: ratings-api-scale
+        image: acrVerityk8sscale.azurecr.io/ratings-api:v1 # IMPORTANT: update with your own repository
         imagePullPolicy: Always
         ports:
         - containerPort: 3000 # the application listens to this port
@@ -21,7 +21,7 @@ spec:
         - name: MONGODB_URI # the application expects to find the MongoDB connection details in this environment variable
           valueFrom:
             secretKeyRef:
-              name: mongosecret # the name of the Kubernetes secret containing the data
+              name: mongosecret-scale # the name of the Kubernetes secret containing the data
               key: MONGOCONNECTION # the key inside the Kubernetes secret containing the data
         resources:
           requests: # minimum resources required
