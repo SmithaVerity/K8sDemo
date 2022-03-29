@@ -1,10 +1,10 @@
 REGION_NAME=eastus
 RESOURCE_GROUP=k8demo
-SUBNET_NAME=k8-subnet
-VNET_NAME=k8-vnet
-AKS_CLUSTER_NAME=k8demoCluster
-ACR_NAME=acrVerityk8sdemo
-WORKSPACE=k8demoworkspace
+SUBNET_NAME=k8-subnet-scale
+VNET_NAME=k8-vnet-scale
+AKS_CLUSTER_NAME=k8demoCluster-scale
+ACR_NAME=acrVerityk8sdemo-scale
+WORKSPACE=k8demoworkspace-scale
 
 
 az group create   --name $RESOURCE_GROUP   --location $REGION_NAME
