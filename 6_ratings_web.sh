@@ -3,5 +3,5 @@
 kubectl apply --namespace ratingsapp-scale -f ratings-web-deployment.yaml
 kubectl get pods --namespace ratingsapp-scale -l app=ratings-web-scale -w
 kubectl get deployment ratings-web-scale --namespace ratingsapp-scale
-kubectl apply --namespace ratingsapp-scale -f ratings-web-service.yaml
+kubectl apply --namespace ratingsapp-scale -f ratings-web-service-scale.yaml
 kubectl get service ratings-web-scale --namespace ratingsapp-scale -w
