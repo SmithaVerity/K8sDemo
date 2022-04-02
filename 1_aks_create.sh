@@ -1,4 +1,4 @@
-REGION_NAME=eastus
+REGION_NAME=centralindia
 RESOURCE_GROUP=k8demo
 SUBNET_NAME=k8-subnet
 VNET_NAME=k8-vnet
