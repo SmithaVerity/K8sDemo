@@ -1,4 +1,4 @@
-REGION_NAME=asia
+REGION_NAME=centralus
 RESOURCE_GROUP=k8demo-scale
 SUBNET_NAME=k8-subnet-scale
 VNET_NAME=k8-vnet-scale
