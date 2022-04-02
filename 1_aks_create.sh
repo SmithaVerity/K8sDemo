@@ -1,4 +1,4 @@
-REGION_NAME=canadaeast
+REGION_NAME=westeurope
 RESOURCE_GROUP=k8demo-scale
 SUBNET_NAME=k8-subnet-scale
 VNET_NAME=k8-vnet-scale
