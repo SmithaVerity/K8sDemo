@@ -19,7 +19,6 @@ az aks create \
 --node-count 2 \
 --load-balancer-sku standard \
 --location $REGION_NAME \
---node-vm-size Standard_d16ads_v5 \
 --kubernetes-version $VERSION \
 --network-plugin azure \
 --vnet-subnet-id $SUBNET_ID \
