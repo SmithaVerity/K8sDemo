@@ -17,7 +17,7 @@ az aks create \
 --name $AKS_CLUSTER_NAME \
 --vm-set-type VirtualMachineScaleSets \
 --node-count 2 \
---load-balancer-sku standard \
+--load-balancer-sku standard_d16ads_v5 \
 --location $REGION_NAME \
 --kubernetes-version $VERSION \
 --network-plugin azure \
