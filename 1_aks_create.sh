@@ -1,4 +1,4 @@
-REGION_NAME=westeurope
+REGION_NAME=francesouth
 RESOURCE_GROUP=k8demo-scale
 SUBNET_NAME=k8-subnet-scale
 VNET_NAME=k8-vnet-scale
