@@ -1,4 +1,4 @@
-REGION_NAME=eastus2
+REGION_NAME=asia
 RESOURCE_GROUP=k8demo-scale
 SUBNET_NAME=k8-subnet-scale
 VNET_NAME=k8-vnet-scale
