@@ -37,8 +37,8 @@ cd ratings-api
 az acr build  -g cnts-rg --registry cntsacr  --image ratings-api:v1 .
 cd ~
 cd K8sDemo/ratings-web
-az acr build -g k8demo --registry cntsacr  --image ratings-web:v1 .
+az acr build -g cnts-rg --registry cntsacr  --image ratings-web:v1 .
 az acr repository list  --name cntsacr   --output table
 cd ~
 cd K8sDemo/
-az aks update --name $AKS_CLUSTER_NAME  -g k8demo --attach-acr $ACR_NAME
+az aks update --name $AKS_CLUSTER_NAME  -g cnts-rg --attach-acr $ACR_NAME
