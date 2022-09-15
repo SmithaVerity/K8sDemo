@@ -1,10 +1,10 @@
 REGION_NAME=eastus
-RESOURCE_GROUP=cnts-rg
-SUBNET_NAME=cnts-subnet
-VNET_NAME=cnts-vnet
-AKS_CLUSTER_NAME=cntscluster
-ACR_NAME=cntsacr
-WORKSPACE=cntsworkspace
+RESOURCE_GROUP=cnatsrg
+SUBNET_NAME=cnatssubnet
+VNET_NAME=cnatsvnet
+AKS_CLUSTER_NAME=cnatscluster
+ACR_NAME=cnatsacr
+WORKSPACE=cnatsworkspace
 
 
 az group create   --name $RESOURCE_GROUP   --location $REGION_NAME
