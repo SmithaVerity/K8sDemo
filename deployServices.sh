@@ -1,7 +1,7 @@
 #run the repo add command directly in the ctl 
 helm repo add bitnami1 https://charts.bitnami.com/bitnami
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm search repo bitnami2
+helm search repo bitnami
 helm install ratings bitnami/mongodb  --namespace ratingsapp \
     --set auth.username=cldtraining,auth.password=cldtraining,auth.database=ratingsdb
 
